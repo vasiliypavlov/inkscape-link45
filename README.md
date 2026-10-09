@@ -90,7 +90,7 @@ cp -r link45 ~/.config/inkscape/extensions/
 
 ```bash
 powershell
-git clone https://github.com/<you>/link45.git
+git clone https://github.com/vasiliypavlov/inkscape-link45.git
 xcopy link45 "%APPDATA%\inkscape\extensions\link45\" /E /I
 ```
 
