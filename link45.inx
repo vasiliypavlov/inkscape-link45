@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Link45</_name>
+    <id>org.inkscape.effect.link45</id>
+
+    <param name="mode" type="optiongroup" appearance="radio" _gui-text="Route">
+        <option value="dod">D-O-D (3 segments)</option>
+        <option value="dodod">D-O-D-O-D (5 segments)</option>
+        <option value="odo">O-D-O (3 segments, reverse)</option>
+        <option value="ododo">O-D-O-D-O (5 segments, reverse)</option>
+        <option value="do">D-O (2 segments)</option>
+        <option value="od">O-D (2 segments, reverse)</option>
+    </param>
+
+    <param name="shape" type="optiongroup" appearance="radio" _gui-text="Shape — S works only with D-O-D">
+        <option value="z">Z — standard zigzag</option>
+        <option value="s">S — hump through center (D-O-D only)</option>
+    </param>
+
+    <param name="anchor" type="optiongroup" appearance="radio" _gui-text="Anchor point">
+        <option value="center">Center of object</option>
+        <option value="edge">Edge facing target</option>
+    </param>
+
+    <param name="group" type="optiongroup" appearance="radio" _gui-text="Multi-object mode">
+        <option value="chain">Chain (sequential)</option>
+        <option value="bus">Bus (paired, non-overlapping)</option>
+    </param>
+
+    <param name="color_source" type="optiongroup" appearance="radio" _gui-text="Color source">
+        <option value="none">Use Style string (default)</option>
+        <option value="fill">Inherit fill color</option>
+        <option value="stroke">Inherit stroke color</option>
+    </param>
+
+    <param name="inverse" type="bool" _gui-text="Inverse route (hug start point)">false</param>
+    <param name="style" type="string" _gui-text="Style">stroke:black;fill:none;stroke-width:0.25</param>
+    <param name="stroke_width" type="float" min="0.01" max="100" _gui-text="Stroke width (user units)">0.25</param>
+    <param name="lane_step" type="float" min="-100" max="100" _gui-text="Lane step (user units)">1.0</param>
+    <param name="lane_margin" type="float" min="0" max="100" _gui-text="Lane margin (user units)">0.5</param>
+    <param name="edge_inset" type="float" min="-100" max="100" _gui-text="Edge inset (mm, +=into pad)">0.3</param>
+
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Custom"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">link45.py</command>
+    </script>
+</inkscape-extension>
