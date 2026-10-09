@@ -53,8 +53,8 @@ Link45 соединяет **центры** (или **обращенные дру
 ### English
 - **6 routing topologies**: D-O-D, D-O-D-O-D, O-D-O, O-D-O-D-O, D-O, O-D
 - **Anchor point**: connect from object center, or from the edge facing the target
-- **Edge inset**: shrink or extend the endpoint along the ray (+ = into pad)
-- **Chain / Bus multi-object modes**: sequential connection or paired (one-to-one)
+- **Edge inset**: shrink or extend the endpoint along the ray
+- **Chain / Bus multi-object modes**: sequential connection or paired
 - **Lane separation**: parallel routes for arrays of pads, no overlaps
 - **Inverse routing**: hug the start point (cubic weight distribution)
 - **S-shape**: hump-through-center variant for D-O-D
@@ -64,8 +64,8 @@ Link45 соединяет **центры** (или **обращенные дру
 ### Русский
 - **6 топологий трассировки**: D-O-D, D-O-D-O-D, O-D-O, O-D-O-D-O, D-O, O-D *(D — диагональ, O — ортогональ)*
 - **Точка привязки**: соединение от центра объекта или от края, обращенного к цели
-- **Отступ от края (Edge inset)**: сокращение или удлинение конечной точки вдоль луча (+ = внутрь площадки)
-- **Режимы для нескольких объектов (Chain / Bus)**: последовательное соединение или попарное (один-к-одному)
+- **Отступ от края (Edge inset)**: сокращение или удлинение конечной точки вдоль луча
+- **Режимы для нескольких объектов (Chain / Bus)**: последовательное соединение или попарное
 - **Разделение дорожек**: параллельные маршруты для массивов площадок без перекрытий
 - **Инверсная трассировка**: прижатие к начальной точке (кубическое распределение весов)
 - **S-образная форма**: вариант с изгибом через центр для топологии D-O-D
